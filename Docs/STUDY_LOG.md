@@ -24,6 +24,31 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-09-27
+**Focus:** State Machines, Invariant principle.
+
+**Topics covered**
+- State machines
+- Execution 
+- Reachability
+- Invariance
+
+**Work produced**
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-22/` (photos/scans)
+
+**Time:** ~44 hours total (update)
+EOF
+
+# Maths notes
+cat > maths/notes.md <<'EOF'
+# Maths Notes – 2025-09-27
+
+- **State Machines**: M = (Q, q0, ->) with state set Q, start state q0 ∈ Q, and transition relation -> ⊆ Q×Q.
+- **Excution**: A sequence q0, q1, …, qn with qi -> q(i+1) for all i.
+- **Reachability**: q is reachable iff there exists an execution from q0 to q; Reach(M) is the least set containing q0 and closed under ->.  
+- **Invariance**: Predicate I is invariant if it holds for all reachable states; prove with I(q0) and (I(p) ∧ p->q) ⇒ I(q).
+
 ## 2025-09-26
 **Focus:** Diagonalisation, PageRank. 
 
