@@ -24,6 +24,33 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-09-28
+**Focus:** Big O notation, Asymptotics, Scratch
+
+**Topics covered**
+- Asymptotic Complexity
+- Log exercises
+- Recurrences
+- Recurrance traps
+
+**Work produced**
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-22/` (photos/scans)
+
+**Time:** ~47 hours total (update)
+EOF
+
+# Maths notes
+cat > maths/notes.md <<'EOF'
+# Maths Notes – 2025-09-27
+
+- **Big-O upper bounds**: At worst, this grows like f(n) up to a constant, e.g., 3n^2 + 5n + 7 is O(n^2).
+- **Big-O omega and theta**: “at least this fast”; Θ = “about this fast on both sides” (tight bound).Ignore constants & small terms: the highest-power term dominates (n^2 outruns n and constants).
+- **Constants**: ne constant for all large n: when you claim O(n^2), the same bounding constant works for all n ≥ n0 (not step-to-step). 
+- **Divide and Conquer**: Divide & conquer feel: halving the problem gives log n levels; ~n work per level ⇒ O(n log n)
+- **Recurrences** T(n) = aT(n/b) + f(n); compare f(n) to n^(log_b a): smaller ⇒ Θ(n^(log_b a)); same×log^p ⇒ Θ(n^(log_b a)·log^(p+1)n); larger (with regularity) ⇒ Θ(f(n)).
+
+
 ## 2025-09-27
 **Focus:** State Machines, Invariant principle.
 
