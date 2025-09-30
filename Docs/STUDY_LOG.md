@@ -24,6 +24,32 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-09-30
+**Focus:** New software and websites, OH MY GIT, OSSU, Codedex, algoactionxyz. developer roadmaps. 
+
+**Topics covered**
+- OHMYGIT and agripongit
+- Developer roadmaps
+- OSSU
+- Algorithm visualisers. 
+
+**Work produced**
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-30/` (photos/scans)
+
+**Time:** ~50 hours total (update)
+EOF
+
+# Maths notes
+cat > maths/notes.md <<'EOF'
+# Maths Notes – 2025-09-30
+
+- **OHMYGIT and agripongit**: Getting used to git, notable commants here are git checkout HEAD. Go one back to get to new branch, generally reccomended to commit seperate files so you can get straight to issues rather than sort through seperately. 
+- **Dev roadmaps**: Core Pathsways of: Game dev & server side. C++, systems design, data structures and algos,  rust. then supporting comp sci, python, AI engineer. 
+- **OSSU**: Free online uni structure, syntactically valid statements, e.g cat god boy not valid by boy hugs cat is.  
+- **Algroithm Visualisers**: Tried, csvistool, algo action and algorithm visualiser.org however i prefer most algo action and now its installed on phone. 
+
+
 ## 2025-09-28
 **Focus:** Big O notation, Asymptotics, Scratch
 
@@ -35,14 +61,14 @@ cat > STUDY_LOG.md <<'EOF'
 
 **Work produced**
 - Notes added in `maths/notes.md`
-- Handwritten evidence planned in `maths/evidence/2025-09-22/` (photos/scans)
+- Handwritten evidence planned in `maths/evidence/2025-09-28/` (photos/scans)
 
 **Time:** ~47 hours total (update)
 EOF
 
 # Maths notes
 cat > maths/notes.md <<'EOF'
-# Maths Notes – 2025-09-27
+# Maths Notes – 2025-09-28
 
 - **Big-O upper bounds**: At worst, this grows like f(n) up to a constant, e.g., 3n^2 + 5n + 7 is O(n^2).
 - **Big-O omega and theta**: “at least this fast”; Θ = “about this fast on both sides” (tight bound).Ignore constants & small terms: the highest-power term dominates (n^2 outruns n and constants).
@@ -62,7 +88,7 @@ cat > maths/notes.md <<'EOF'
 
 **Work produced**
 - Notes added in `maths/notes.md`
-- Handwritten evidence planned in `maths/evidence/2025-09-22/` (photos/scans)
+- Handwritten evidence planned in `maths/evidence/2025-09-27/` (photos/scans)
 
 **Time:** ~44 hours total (update)
 EOF
@@ -86,7 +112,7 @@ cat > maths/notes.md <<'EOF'
 
 **Work produced**
 - Notes added in `maths/notes.md`
-- Handwritten evidence planned in `maths/evidence/2025-09-22/` (photos/scans)
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
 - Code snipped referenced from Imperial LAB
 
 **Time:** ~42 hours total (update)
@@ -140,7 +166,7 @@ cat > maths/notes.md <<'EOF'
 
 **Work produced**
 - Notes added in `maths/notes.md`
-- Handwritten evidence planned in `maths/evidence/2025-09-22/` (photos/scans)
+- Handwritten evidence planned in `maths/evidence/2025-09-25/` (photos/scans)
 
 **Time:** ~38 hours total (update)
 EOF
@@ -171,7 +197,7 @@ cat > maths/notes.md <<'EOF'
 
 **Work produced**
 - Notes added in `maths/notes.md`
-- Handwritten evidence planned in `maths/evidence/2025-09-22/` (photos/scans)
+- Handwritten evidence planned in `maths/evidence/2025-09-24/` (photos/scans)
 
 **Time:** ~34 hours total (update)
 EOF
