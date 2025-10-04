@@ -24,6 +24,40 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-09-30 to 2025-10-4
+
+## System Recovery & GitHub Reinitialisation**
+
+**Focus:** System restoration, GitHub re-setup, and environment recovery after disk error.
+
+**Context:**
+Due to a macOS UI-level system error affecting the Macintosh HD volume (impacting multiple user accounts and safe mode functionality), I was required to **erase and reinstall macOS**. This process reset all local environments, Git, and VS Code configurations. It was unfortunate that it got to that point and I spent many hours trying to diagnose and then resolve the issue. 
+
+**Actions Taken:**
+
+* Backed up and reinstalled the system via macOS Recovery.
+* Reinstalled **VS Code**, **Python**, and **Git**.
+* Re-cloned the repository:
+  `git clone https://github.com/EstellaHurlock/computing-application-prep-2026-imperial.git`
+* Verified branch (`main`) and reconnected Git remote.
+* Restored folder structure:
+
+  ```
+  maths/
+  ├── evidence/
+  Docs/
+  algorithms/
+  ```
+* Confirmed Git identity and authentication.
+* Re-added local study materials and ongoing notes.
+
+**Outcome:**
+System is now fully restored and version-controlled. All files synchronised from the GitHub remote repository.
+Next focus: resume CS50 module progression and continue with discrete mathematics notes.
+
+**Reflection:**
+Although this was an unplanned interruption, the recovery process provided practical experience in **system reinitialisation**, **version control robustness**, and **environment reconfiguration** — useful foundational skills for future software development and systems engineering contexts.
+
 ## 2025-09-30
 **Focus:** New software and websites, OH MY GIT, OSSU, Codedex, algoactionxyz. developer roadmaps. 
 
