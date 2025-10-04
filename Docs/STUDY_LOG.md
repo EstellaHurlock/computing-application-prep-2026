@@ -38,7 +38,7 @@ Due to a macOS UI-level system error affecting the Macintosh HD volume (impactin
 * Backed up and reinstalled the system via macOS Recovery.
 * Reinstalled **VS Code**, **Python**, and **Git**.
 * Re-cloned the repository:
-  `git clone https://github.com/EstellaHurlock/computing-application-prep-2026-imperial.git`
+  `git clone ...
 * Verified branch (`main`) and reconnected Git remote.
 * Restored folder structure:
 
