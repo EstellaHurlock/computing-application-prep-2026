@@ -24,6 +24,158 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-10-08
+**Focus:** Python coding
+
+**Topics covered**
+- Loops
+- nested loops
+
+**Work produced**
+- Code snippets below
+
+**Time:** ~61 hours total (updated)
+EOF
+
+- **Loops**: People will often use the generic term “iterate” when referring to loops; iterate simply means “to repeat”. Kinds of loops, while loops, for loops with range() function. 
+- **Range()**: Goes for numbers from 0 so range(6) is 0 1 2 3 4 5. example for i in range(100): - print("I will not use Snapchat in class"). for moving with range range(start, stop, step): so countdown from 99 is range(99, 0, -1).
+- **String interpolation**:  if you have a template for saying hello to a person in an email like 'Hi {name}, nice to meet you!', you would like to replace the placeholder {name} with an actual name. This is string interpolation. so for range looks like 
+for i in range(6):
+  print(f'The square of {i} is {i*i}')
+- **nested loops** To break out of the for loop, we use the break keyword. To break out of the outer while loop, we reassign False to the notFound variable.
+
+
+## Code examples: 
+- **Pin code loop**
+
+print('BANK OF CODÉDEX')
+
+pin = int(input('Enter your PIN: '))
+
+while pin != 1234:
+  pin = int(input('Incorrect PIN. Enter your PIN again: '))
+
+if pin == 1234:
+  print('PIN accepted!')
+
+- **number guess**
+
+#guess.py
+
+guess = 0
+tries = 0
+
+while guess != 6 and tries < 6:
+  guess = int(input("Guess the number:  "))
+  tries = tries + 1
+
+if guess != 6:
+  print("You ran out of tries!")
+else: 
+  print('You got it!')
+
+- **99_bottles.py**
+
+for i in range(99, 0, -1):
+  print(f" {i} bottles of beer on the wall")
+  print(f"{i} bottles of beer")
+  print("Take one down, pass it around")
+  print(f"{i-1} bottles of beer on the wall")
+
+- **FizzBuzz challenge**
+
+for i in range(1, 101, 1):
+  if i % 3 == 0 and i % 5 != 0:
+    print("Fizz")
+  elif i % 5 == 0 and i % 3 != 0:
+    print("Buzz")
+  elif i % 3 == 0 and i % 5 == 0: 
+    print("FizzBuzz")
+  else:
+    print(i)
+NOTE could put 3 and 5 first so that they dont get caughts in the others then no need for the extra constraints.
+
+- **nested loop example**
+import random
+
+lucky_number = random.randint(1, 9)
+not_found = True
+
+while not_found:
+  for i in range(1, 10):
+    if i == lucky_number:
+      not_found = False
+      break
+    else:
+      print(i)
+
+print(f"Yay I got my lucky number {lucky_number}! 🍀")
+
+- **Control flow challenge**
+
+rating = 1.1
+
+if rating >= 4.5:
+    print("Extraordinary")
+elif rating >= 4:
+    print("Excellent")
+elif rating >= 3:
+    print("Good")
+elif rating >= 2:
+    print("Fair")
+else:
+    print("Poor")
+
+- **medium controlo flow challenge**
+
+import random
+number = random.randint(0, 5)
+
+if number == 0:
+  print('Flamingos turn pink from eating shrimp.')
+elif number == 1:
+  print('The only food that doesn\'t spoil is honey.')
+elif number == 2:
+  print('Shrimp can only swim backwards.')
+elif number == 3:
+  print('A taste bud\'s life span is about 10 days.')
+elif number == 4:
+  print('It is impossible to sneeze while sleeping.')
+elif number == 5:
+  print('It is impossible to sneeze while sleeping.')
+else:
+  print("invalid")
+
+- **Control flow harder**
+
+pweight = float(input("What is your Earth weight? as a decimal.  "))
+pnumber = int(input("What is your planet number?  "))
+
+if pnumber == 1:      
+    dweight = pweight * 0.38
+    print(dweight)
+elif pnumber == 2:    
+    dweight = pweight * 0.91
+    print(dweight)
+elif pnumber == 3:  
+    dweight = pweight * 0.38
+    print(dweight)
+elif pnumber == 4:    
+    dweight = pweight * 2.53
+    print(dweight)
+elif pnumber == 5:   
+    dweight = pweight * 1.07
+    print(dweight)
+elif pnumber == 6:  
+    dweight = pweight * 0.89
+    print(dweight)
+elif pnumber == 7:   
+    dweight = pweight * 1.14
+    print(dweight)
+else:
+    print("invalid planet number")
+
+
 ## 2025-10-07
 **Focus:** Python coding
 
