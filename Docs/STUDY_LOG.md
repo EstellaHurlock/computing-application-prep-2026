@@ -24,6 +24,253 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-10-07
+**Focus:** Python coding
+
+**Topics covered**
+- Python control flow
+- If statements
+- Relational Operators
+- Randoms 
+- Logical operators
+
+**Work produced**
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-24/` (photos/scans)
+
+**Time:** ~58 hours total (update)
+EOF
+
+- **Control flow def**:  how programs "make decisions" by evaluating different conditions, and introducing logic into program
+- **If statements**: Put a colon after the entire if statement and then a colon after else. Also known as Elif. nested if statements, example in coding snippets.
+- **Relational operators**: == equal to, != not equal to, > greater than, < less than, >= greater than or equal to, <= less than or equal to
+- **Random integers.** import random in first from the .py file style. then assign number e.g num = random.randint(1, 9)
+- **Logical Operators** also known as boolean operators. and returns True if both conditions are True, and returns False otherwise. or returns True if at least one of the conditions is True, and False otherwise. not returns True if the condition is False, and vice versa.
+
+## Code examples: 
+- **Coin flip** 
+import random
+
+num = random.randint(0, 1)   # Generates a random number that's either 0 or 1
+
+if num > 0.5:
+  print('Heads')
+else:
+  print('Tails')
+
+- **Class grade** 
+
+grade = 60
+
+if grade >= 55:
+  print('you passed')
+
+else:
+  print('you failed')
+
+- **pH value** 
+
+ph = int(input('Enter a pH value 0-14: '))
+
+if ph > 7:
+  print('Basic')
+elif ph < 7:
+  print('Acidic')
+else:
+  print('Neutral')
+
+- **Magic 8 ball**
+
+# Magic 8 Ball 🎱
+# Codédex
+
+import random
+
+question = input('Question:      ')
+
+random_number = random.randint(1, 9)
+
+if random_number == 1:
+  answer = 'Yes - definitely'
+elif random_number == 2:
+  answer = 'It is decidedly so'
+elif random_number == 3:
+  answer = 'Without a doubt'
+elif random_number == 4:
+  answer = 'Reply hazy, try again'
+elif random_number == 5:
+  answer = 'Ask again later'
+elif random_number == 6:
+  answer = 'Better not tell you now'
+elif random_number == 7:
+  answer = 'My sources say no'
+elif random_number == 8:
+  answer = 'Outlook not so good'
+elif random_number == 9:
+  answer = 'Very doubtful'
+else:
+  answer = 'Error'
+  
+print('Magic 8 Ball:  ' + answer)
+
+good habit to not print in a long list of if and elifs like thi sand do answer then print instead. 
+
+- **Theme park rides**
+
+height = int(input('What is your height (cm)? '))
+credits = int(input('How many credits do you have? '))
+
+if height >= 137 and credits >= 10:
+  print("Enjoy the ride!")
+elif height < 137 and credits >= 10:
+  print("You are not tall enough to ride.")
+elif credits < 10 and height >= 137:
+  print("You don't have enough credits to ride.")
+else:
+  print("You are not tall enough for this ride, nor do you have enough credits.")
+
+- **Sorting hat**
+# sortinghat.py
+
+name = input("What is your name?: ")
+
+q1 = int(input(" Do you like Dawn or Dusk? (Answer 1 for Dawn and 2 for Dusk) "))
+q2 = int(input(" When I’m dead, I want people to remember me as?: (1 The good, 2 the great, 3 the wise, 4 the bold) "))
+q3 = int(input(" Which kind of instrument most pleases your ear?: (1 The violin, 2 The trumpet, 3 The piano, 4 The drum) "))
+
+Gryffindor = 0
+Ravenclaw = 0
+Hufflepuff = 0
+Slytherin = 0
+
+if q1 == 1:
+  Gryffindor += 1
+  Ravenclaw += 1
+elif q1 == 2: 
+  Hufflepuff += 1 
+  Slytherin += 1
+else:
+  print("wrong input Q1") 
+
+if q2 == 1:
+  Hufflepuff += 2
+elif q2 == 2: 
+  Slytherin += 2
+elif q2 == 3: 
+  Ravenclaw += 2
+elif q2 == 4: 
+  Gryffindor += 2
+else:
+  print("wrong input Q2")
+
+if q3 == 1:
+  Slytherin += 4
+elif q3 == 2: 
+  Hufflepuff += 4
+elif q3 == 3: 
+  Ravenclaw += 4
+elif q3 == 4: 
+  Gryffindor += 4
+else:
+  print("wrong input Q3")
+
+print('Gryffindor', Gryffindor)
+print('Ravenclaw', Ravenclaw)
+print('Hufflepuff', Hufflepuff)
+print('Slytherin', Slytherin)
+
+if Gryffindor > Ravenclaw and Gryffindor > Hufflepuff and Gryffindor > Slytherin:
+  house = 'Gryffindor'
+elif Ravenclaw > Gryffindor and Ravenclaw > Hufflepuff and Ravenclaw > Slytherin:
+  house = 'Ravenclaw'
+elif Hufflepuff > Gryffindor and Hufflepuff > Ravenclaw and Hufflepuff > Slytherin:
+  house = 'Hufflepuff'
+elif Slytherin > Gryffindor and Slytherin > Ravenclaw and Slytherin > Hufflepuff:
+  house = 'Slytherin'
+else:
+  house = "wrong input"
+
+print(name + " you are a " + house + "!")
+
+- **Nested if statement**
+weather = 'Sunny'
+humidity = 35
+
+if weather == 'Sunny':
+  if humidity < 60:
+    print('Let’s go to the beach! 🏖️')
+  else:
+    print('Hmmm, it’s a little humid for a beach day.')
+else:
+  print('It’s not sunny today... let’s try for another day.') 
+
+## 2025-10-06
+**Focus:** Python Codedex, Variables/ data types, operators
+
+**Topics covered**
+- Different Variables and data types
+- Error types
+
+**Work produced**
+- coding snippets down below
+
+**Time:** ~55 hours total (update)
+EOF
+
+# Maths notes
+cat > maths/notes.md <<'EOF'
+# Maths Notes – 2025-09-30
+
+- **Different Variables**: Example: string value "Estella Hurlock" is assigned to (=) the variable name, or assigning number value 22 to variable age. Int (whole numbers), float(decimals), string (text) , boolean (true or false) other comment, " or' i recommend " because then i can put text with ' inside.
+- **Operators**: Addition+ Subtraction- Multiplication* Division/ example, score = 4 + 3 print(score) output 8. Modulo operator % doesnt give division but gives the remainder instead. example score = 5 % 3 score is 2. Another is exponents, So 2 ** 3 is 2³. 
+- **Error types**: Three most common errors are SyntaxError, NameError  and TypeError. syntax is because the syntax is wrong, name error is made from  referring to a variable that hasn't been made yet, type error is from wrong type of data presented, for example with print(message + str(28)) if you didnt have str it would confuse things. 
+
+## Code examples: 
+- **Farenheit to celcius** 
+Farenheit = 70
+
+Celsius = (Farenheit - 32) / 1.8
+
+print(Celsius)
+
+- **BMI**
+mass = 70
+height = 1.73
+
+bmi = mass / (height ** 2)
+
+print(bmi)
+
+- **Pythagoras** 
+a = int(input("What is your short side length?"))
+b = int(input("what is the other short side length?"))
+
+Hypotenuse = (a ** 2 + b ** 2) ** 0.5
+
+print(Hypotenuse)
+COMMENT: here my initial error was putting 0.5 ** (etc) this means putting 0.5 to the power of pythagorases theorem so wrong way round.
+
+- **Quadratic formula** 
+
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+c = int(input("Enter c: "))
+
+x1 = (-b + (b*b - 4*a*c)**0.5) / (2*a)
+x2 = (-b - (b*b - 4*a*c)**0.5) / (2*a)
+
+print(x1)
+print(x2)
+
+- **Currency converter**
+pesos = int(input("What do you have left in pesos? "))
+soles = int(input("What do you have left in soles? ")) 
+reais = int(input("What do you have left in reais? "))
+
+USD = (pesos*0.055) + (soles*0.29) + (reais*0.19)
+
+print(USD)
+
 ## 2025-09-30 to 2025-10-4
 
 ## System Recovery & GitHub Reinitialisation**
