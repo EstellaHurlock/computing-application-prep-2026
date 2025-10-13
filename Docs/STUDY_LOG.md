@@ -24,6 +24,138 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-10-13
+**Focus** python, C#, Markdown
+
+**Topics covered**
+- Python challenge packs loops
+- C# begginners funadamentals
+- Markdown chetsheets and basics. 
+
+**Work produced**
+- Code snippets below
+
+**Time:** ~67 hours total (updated)
+EOF
+
+- **Console.WriteLine**: Single quotes create a character literal. double quotation marks creates a string data type. Just like the string data type, you use char whenever you have a single alphanumeric character for presentation (not calculation).
+- **Data types float, double, decimal**: 
+Float Type | Precision
+--- | --- 
+float | ~6-9 digits
+double | ~15-17 digits
+decimal | 8-29 digits
+
+Console.WriteLine(0.25F); the F is a literal suffix. float
+Console.WriteLine(2.625); automatically creates double. 
+Console.WriteLine(12.39816m); m is decimal literal suffix. can use lower case or upper case M.
+- **Data types Booleans**
+Console.WriteLine(true);
+Console.WriteLine(false); as you see no quotations needed.
+- **Declaring Variables**
+To create a new variable, you must first declare the data type of the variable, and then give it a name.
+string thisIsCamelCase;
+char userOption;
+int gameScore;
+decimal particlesPerMillion;
+bool processedCustomer;
+Variable names shouldn't include the data type of the variable. You might see some advice to use a style like string strValue;. That advice is no longer current.
+- **Setting the Variables**
+string firstName;
+firstName = "Bob"; 
+or
+string firstName = "Bob"; to set immediately in the same line
+- **Using var**
+The var keyword has an important use in C#. Many times, the type of a variable is obvious from its initialization. In those cases, it's simpler to use the var keyword. The var keyword can also be useful when planning the code for an application. When you begin developing code for a task, you may not immediately know what data type to use. Using var can help you develop your solution more dynamically.
+
+## Code examples: 
+
+- **Python syntax highlighting** 
+
+```python
+s = "Python syntax highlighting"
+print s
+```
+
+- **text answer loop**
+```python
+answer = input("Are we there yet?  ")
+
+while answer != "Yes":
+    answer = input("Are we there yet?  ")
+
+print("Yayyy")
+
+- **Roll dice until 1 and 1**
+
+import random
+
+die1 = random.randint(1, 6)
+die2 = random.randint(1, 6)
+
+total = die1 + die2
+
+while total != 2:
+  print("Nope")
+
+  die1 = random.randint(1, 6)
+  die2 = random.randint(1, 6)
+
+  total = die1 + die2
+else:
+  print("Snake eyes!")
+
+- **printing challenge**
+for i in range(1, 25):
+  print("* " * i)
+```
+- **Adding Squares**
+
+number = int(input("What is your number?: "))
+
+total = 0
+for i in range(1, number + 1):
+    total += i**2
+
+print(total)
+
+- **C# defining variables**
+
+```C#
+string firstName = "Bob";
+int messages = 3;
+decimal temp = 34.4m;
+
+Console.Write("Hello, ");
+Console.Write(firstName);
+Console.Write("! You have ");
+Console.Write(messages);
+Console.Write(" messages in your inbox. The temperature is ");
+Console.Write(temp);
+Console.Write(" celsius."); 
+```
+
+## 2025-10-09
+**Focus:** C# Coding 
+
+**Topics covered**
+- C#
+
+Main track: Microsoft Learn modules (daily 20–30 min). 
+Microsoft Learn
+Daily practice: 1–2 Exercism exercises. 
+Exercism.
+Milestone: Finish the freeCodeCamp × Microsoft certification to lock it in. FreeCodeCamp
+
+**Work produced**
+- Code snippets below
+
+**Time:** ~63 hours total (updated)
+EOF
+
+- **Small things**: Console.WriteLine("Hello World!"); // creates comment, Console.Write just adds one line with multiple.
+- **concepts**: Console is a class. WriteLine() is a method, "blablabla" is a string. The parentheses are known as the method invocation operator. The period is the member access operator. In other words, the dot is how you "navigate" from the class to one of its methods.
+
 ## 2025-10-08
 **Focus:** Python coding
 
