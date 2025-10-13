@@ -40,16 +40,11 @@ EOF
 
 - **Console.WriteLine**: Single quotes create a character literal. double quotation marks creates a string data type. Just like the string data type, you use char whenever you have a single alphanumeric character for presentation (not calculation).
 - **Data types float, double, decimal**: 
+
 Float Type | Precision
 --- | --- 
 float | ~6-9 digits
 double | ~15-17 digits
-decimal | 8-29 digits
-
-Float Type | Precision
---- | --- | ---
-float | 6-9 digits 
-double | 15-17 digits
 decimal | 8-29 digits
 
 Console.WriteLine(0.25F); the F is a literal suffix. float
