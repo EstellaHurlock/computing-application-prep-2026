@@ -46,10 +46,11 @@ float | ~6-9 digits
 double | ~15-17 digits
 decimal | 8-29 digits
 
-Markdown | Less | Pretty
+Float Type | Precision
 --- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+float | 6-9 digits 
+double | 15-17 digits
+decimal | 8-29 digits
 
 Console.WriteLine(0.25F); the F is a literal suffix. float
 Console.WriteLine(2.625); automatically creates double. 
