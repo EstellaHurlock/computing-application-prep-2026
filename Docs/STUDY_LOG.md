@@ -46,6 +46,11 @@ float | ~6-9 digits
 double | ~15-17 digits
 decimal | 8-29 digits
 
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
 Console.WriteLine(0.25F); the F is a literal suffix. float
 Console.WriteLine(2.625); automatically creates double. 
 Console.WriteLine(12.39816m); m is decimal literal suffix. can use lower case or upper case M.
