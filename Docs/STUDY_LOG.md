@@ -24,6 +24,131 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-10-15
+**Focus** Python
+
+**Topics covered**
+- Lists
+- 2
+- 3
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~71 hours total (updated)
+
+- **Lists**: are created using square brackets [ and ]. And the items are separated by , commas.
+- **Indexes**: can be positive or negative, for 5 items they list 0to4 or -5to-1
+- **slicing indexes**: Instead of accessing an item using a single index like name[index], we can get multiple items by specifying where to start and where to end the range like name[start : end].
+- **built in fuctions for lists**: 
+The len() function returns the total length of a list.
+The max() function returns the maximum value in a list.
+The min() function returns the minimum value in a list.
+[website for python built in functions](https://docs.python.org/3/library/functions.html#breakpoint) 
+- **list methods**: 
+
+List Method	Description
+--- | ---
+.append() | Add an item to the end of the list
+.clear() | Remove all items from the list
+.copy() | Return a shallow copy of the list
+.count() | Return the number of times the value appears in the list
+.extend() | Appends another list to the current list by extending it
+.index() | Returns the index of a value inside the list
+.insert() | Insert an item at a specified position in the list
+.pop() | Remove an item from a specified position in the list
+.remove() | Remove an item from the list based on the value of the item
+.reverse() | Reverses the list in place
+.sort() | Sorts the list in place
+
+- **Iterating over a list**: 
+```python
+snowfall = [0.3, 0.0, 0.0, 1.2, 3.9, 2.2, 0.8]
+
+for i in snowfall:
+  print(i)
+```
+as you can see here i represents each part of the list so will print out each item underneath each other down.
+
+## Code examples: 
+- **grocery list**
+```python
+#grocery.py
+grocery = ['🥚 Eggs', '🥑 Avocados', '🍪 Cookies', '🌶 Hot Pepper Jam', '🫐 Blueberries', '🥦 Broccoli']
+print(grocery)
+```
+
+- **Calling from list**
+```python
+todo = ['🏦 Get quarters.', '🧺 Do laundry.', '🌳 Take a walk.', '💈 Get a haircut.', '🍵 Make some tea.', '💻 Complete Lists chapter.', '💖 Call mom.', '📺 Watch My Hero Academia.']
+print(todo[0 : 2])
+```
+- **built in functions**
+```python
+stock1_prices = [2.52, 2.44, 2.32, 2.41, 2.51, 2.50, 2.44]
+stock2_prices = [8.36, 8.31, 8.21, 8.21, 8.25, 8.11, 8.13]
+
+print(len(stock1_prices))      # Output: 7
+print(max(stock1_prices))      # Output: 2.52
+print(min(stock2_prices))      # Output: 8.11
+```
+- **list methods**
+```python
+#reading_list.py
+
+books = ['Harry Potter', '1984', 'The Fault in Our Stars', 'The Mom Test', 'Life in Code']
+
+books.append('Pachinko')
+books.remove('The Fault in Our Stars')
+books.pop(1)
+
+print(books)
+```
+
+- **Loops in lists**
+```python
+playlist = [
+  'Porches - rangerover',
+  'Mount Eerie - You Swan, Go On',
+  'Carolyn Polachek - Look at Me Now',
+  'Pinegrove - Darkness',
+  'LVL UP - Spirit Was',
+  'Mitski - First Love / Late Spring'
+]
+for i in range(len(playlist)):
+  print(playlist[i])
+  ```
+also could replace the end with a for in with no range() loop
+
+for i in playlist:
+  print(i)
+
+- **lists challenge**
+
+```python
+#bucket_list.py
+things_to_do = [
+  '🚀 Create the dopest learn to code platform ever.',
+  '⛰️ Hike the Pacific Crest Trail.',
+  '🏡 Build an A-frame house and raise some goats.',
+  '🌏 Live somewhere in Asia for a year.',
+  '🎸 Release an album.',
+  '📝 Write a book.',
+  '🏆 Reach 100k subscribers on YouTube.',
+  '🚐 Road trip with the fam.',
+  '🍳 Open a cozy diner upstate.',
+  '👴🏻 Grow old with no regrets.'
+]
+things_to_do.pop(9)
+things_to_do.append('Become innovative in audio')
+
+for i in things_to_do:
+  print(i)
+```
+
 ## 2025-10-14
 **Focus** C#
 
