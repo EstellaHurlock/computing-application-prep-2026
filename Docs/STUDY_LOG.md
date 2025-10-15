@@ -29,8 +29,6 @@ cat > STUDY_LOG.md <<'EOF'
 
 **Topics covered**
 - Lists
-- 2
-- 3
 
 **Work produced**
 - Code snippets below
@@ -50,7 +48,7 @@ The min() function returns the minimum value in a list.
 [website for python built in functions](https://docs.python.org/3/library/functions.html#breakpoint) 
 - **list methods**: 
 
-List Method	Description
+List Method | Description
 --- | ---
 .append() | Add an item to the end of the list
 .clear() | Remove all items from the list
