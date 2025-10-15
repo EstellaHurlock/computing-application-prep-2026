@@ -24,6 +24,88 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-10-14
+**Focus** C#
+
+**Topics covered**
+- Performing basic string formatting
+
+**Work produced**
+- Code snippets below
+
+**Time:** ~69 hours total (updated)
+
+- **Character escape sequences**: An instruction to the runtime to insert a special character that will affect the output of your string. In C#, the escape character sequence begins with a backslash \ followed by the character you're escaping. For example, the \n sequence will add a new line, and a \t sequence will add a tab.
+idea print a cheatsheet of escape sequences for different coding 
+languages.
+- **Verbatim strings** treat backslashes as literal characters, letting you write things like file paths or regex patterns without needing escape sequences (except for ending backslashes or quote marks).
+```c#
+Console.Write(@"c:\invoices");
+```
+- **Unicode**: In unicode you add encoded characters as literal strings, here this means こんにちは World!. several caveats though so requires its own learning.
+```c#
+// Kon'nichiwa World
+Console.WriteLine("\u3053\u3093\u306B\u3061\u306F World!");
+``` 
+- **string concatenation**: combining two or more string values into a new string value. Unlike addition, the second value is appended to the end of the first value, and so on.
+- **String Interpolation**: combines multiple values into a single literal string by using a "template" and one or more interpolation expressions. An interpolation expression is indicated by an opening and closing curly brace symbol { }. 
+
+## Code examples: 
+- **Escape Sequences**
+```c#
+Console.WriteLine("Generating invoices for customer \"Contoso Corp\" ... \n");
+Console.WriteLine("Invoice: 1021\t\tComplete!");
+Console.WriteLine("Invoice: 1022\t\tComplete!");
+Console.WriteLine("\nOutput Directory:\t");
+Console.Write(@"c:\invoices");
+
+// To generate Japanese invoices:
+// Nihon no seikyū-sho o seisei suru ni wa:
+Console.Write("\n\n\u65e5\u672c\u306e\u8acb\u6c42\u66f8\u3092\u751f\u6210\u3059\u308b\u306b\u306f\uff1a\n\t");
+// User command to run an application
+Console.WriteLine(@"c:\invoices\app.exe -j");
+```
+
+- **String concatenation**
+```c#
+string firstName = "Bob";
+string greeting = "Hello";
+Console.WriteLine(greeting + " " + firstName + "!");
+```
+- **String interpolation**
+```c#
+int version = 11;
+string updateText = "Update to Windows";
+Console.WriteLine($"{updateText} {version}!");
+```
+-**Combining verbatim literals and string interpolation**
+```c#
+string projectName = "First-Project";
+Console.WriteLine($@"C:\Output\{projectName}\Data");
+```
+
+- **Formatting challenge**
+```c#
+string projectName = "ACME";
+
+string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
+Console.WriteLine($@"View English output:
+c:\Exercise\ACME\data.txt
+
+{russianMessage}:
+c:\Exercise\ACME\ru-RU\data.txt");
+```
+different solution:
+
+```c#
+string projectName = "ACME";
+string englishLocation = $@"c:\Exercise\{projectName}\data.txt";
+Console.WriteLine($"View English output:\n\t{englishLocation}\n");
+
+string russianMessage = "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0440\u0443\u0441\u0441\u043a\u0438\u0439 \u0432\u044b\u0432\u043e\u0434";
+string russianLocation = $@"c:\Exercise\{projectName}\ru-RU\data.txt";
+Console.WriteLine($"{russianMessage}:\n\t{russianLocation}\n");
+```
 ## 2025-10-13
 **Focus** python, C#, Markdown
 
