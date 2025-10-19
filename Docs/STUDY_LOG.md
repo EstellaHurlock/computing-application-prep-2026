@@ -24,6 +24,119 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-10-13
+**Focus** C# number operations 
+
+**Topics covered**
+- basic maths operations
+- converting int to decimal
+- increments
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~75 hours total (updated)
+
+- **add sub mult div with Console.WriteLine**: example is
+```python
+int firstNumber = 12;
+int secondNumber = 7;
+Console.WriteLine(firstNumber + secondNumber); 
+
+or 
+
+int sum = 7 + 5;
+int difference = 7 - 5;
+int product = 7 * 5;
+int quotient = 7 / 5;
+
+Console.WriteLine("Sum: " + sum);
+Console.WriteLine("Difference: " + difference);
+Console.WriteLine("Product: " + product);
+Console.WriteLine("Quotient: " + quotient);
+```
+However, the resulting quotient of the division example may not be what you may have expected. The values after the decimal are truncated from the quotient since it is defined as an int, and int cannot contain values after the decimal. e.g 7 \ 5 = 1 
+- **perform division using literal decimal data**: you need to use a data type that supports fractional digits after the decimal point like decimal. 
+```python
+decimal decimalQuotient = 7.0m / 5;
+Console.WriteLine($"Decimal quotient: {decimalQuotient}");
+```
+make sure at least one of the numbers has an m to tell the computer its a decimal not a double. 
+- **Add code to cast results of integer division**: use decimal. example in the code below. but essentially (decimal)titleName 
+- **remainder after integer division**: The modulus operator % tells you the remainder of int division. What you really learn from this is whether one number is divisible by another. so same as python. 
+```python
+Console.WriteLine($"Modulus of 200 / 5 : {200 % 5}");
+Console.WriteLine($"Modulus of 7 / 5 : {7 % 5}");
+```
+- **order of operations**: C# follows the same order as PEMDAS except for exponents. While there's no exponent operator in C#, you can use the System.Math.Pow method. The module "Call methods from the .NET Class Library using C#" will feature this method and others.
+- **Increment deincerement**: 
+Operators like +=, -=, *=, ++, and -- are known as compound assignment operators because they compound some operation in addition to assigning the result to the variable. The += operator is specifically termed the addition assignment operator.
+int value = 0;     // value is now 0.
+value = value + 5; // value is now 5.
+value += 5;        // value is now 10.
+value = value + 1; // value is now 11.
+value++;           // value is now 12.
+- **Farenheit challenge**:
+my original answer
+```c#
+int farenheit = 70;
+Console.WriteLine("The temperature is " + (farenheit - 32) * (5 / 9m) + " Celsius.");
+```
+their answer
+```c#
+int fahrenheit = 70;
+decimal celsius = (fahrenheit - 32m) * (5m / 9m);
+Console.WriteLine("The temperature is " + celsius + " Celsius.");
+```
+python answer
+```python
+Farenheit = 70
+Celsius = (Farenheit - 32) / 1.8
+print(Celsius)
+```
+
+## Code examples: 
+- **addition sentences**
+```c#
+string firstName = "Bob";
+int widgetSold = 7;
+Console.WriteLine(firstName + " sold " + (widgetSold + 7) + " widgets.");
+```
+output Bob sold 14 widgets.
+
+- **converting int to decimal for operation**
+```c#
+int first = 7;
+int second = 5;
+decimal quotient = (decimal)first / (decimal)second;
+Console.WriteLine(quotient);
+```
+answer is 1.4
+
+- **Confusing incrementing example**
+```c#
+int value = 1;
+value++;
+Console.WriteLine("First: " + value);
+Console.WriteLine($"Second: {value++}");
+Console.WriteLine("Third: " + value);
+Console.WriteLine("Fourth: " + (++value));
+```
+answer is 
+First: 2
+Second: 2
+Third: 3
+Fourth: 4
+this is because, ++value adds value then stores it and value++ stores value then adds after.
+
+## 2025-10-18
+**Focus** Revision
+
+**Time:** ~73 hours total (updated)
+
 ## 2025-10-15
 **Focus** Python
 
