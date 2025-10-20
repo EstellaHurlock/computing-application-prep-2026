@@ -24,6 +24,61 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-10-20
+**Focus** bla
+
+**Topics covered**
+- 1
+- 2
+- 3
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~x hours total (updated)
+
+- **1**: text here
+- **2**: text here
+
+
+## Code examples: 
+- **Title**
+```python
+s = "Python syntax highlighting"
+print s
+```
+- **area calculator**
+```python
+# calculator.py
+
+import math
+shape = int(input("Which shape:"  ))
+
+
+if shape == 1:
+  Base = int(input("Base:" ))
+  Height = int(input("Height:"  ))
+  area = (Base * Height) / 2
+elif shape == 2:
+  Base = int(input("Base:" ))
+  Height = int(input("Height:"  ))
+  area = Base * Height
+elif shape == 3:
+  Base = int(input("Base:" ))
+  Height = int(input("Height:"  ))
+  area = Base ** 2
+elif shape == 4:
+  Base = int(input("Base:" ))
+  Height = int(input("Height:"  ))
+  area = math.pi * (Base / 2) ** 2 
+else:
+  print("Quit")
+
+print(area)
+```
 ## 2025-10-19
 **Focus** C# number operations 
 
