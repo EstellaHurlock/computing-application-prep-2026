@@ -17,7 +17,7 @@ You can find the first month of study log entries at MONTH_1_STUDY_LOG
 - `STUDY_LOG.md` – dated entries of what I covered and produced.
 
 # computing-application-prep-2026-imperial
-cd "/Users/estella/git-practice/imperial-app-prep/computing-application-prep-2026-imperial"
+cd "/Users/estella/git-practice/imperial-app-prep/computing-application-prep-2026-imperial" 
 
 EOF
 
@@ -30,8 +30,6 @@ cat > STUDY_LOG.md <<'EOF'
 
 **Topics covered**
 - Creating a function
-- 2
-- 3
 
 **Work produced**
 - Code snippets below
@@ -39,13 +37,58 @@ cat > STUDY_LOG.md <<'EOF'
 - Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
 
 
-**Time:** ~x hours total (updated)
+**Time:** 77 hours total (updated)
 
 - **DRY**: “Don't Repeat Yourself” (DRY) is a principle in software development aimed at reducing repetition and writing good clean code. Functions play a big part.
-- **2**: text here
+- **Creating a function step 1**:first you need to define your function with def. followed by the function name, a set of parentheses, and a colon, in that order.
+```python
+def name():
+  # The code inside
+```
+- **naming and calling function**: The common naming convention for functions is snake_case. 
+```python
+def say_hello():
+  print('Howdy! 🤠')
+  print('How are you?')
+```
+this doesn't work till we add the call to say_hello
+```python
+def say_hello():
+  print('Howdy! 🤠')
+  print('How are you?')
 
+say_hello()
+```
+- **inputs into a created function**: Sometimes, we want our functions to perform a specific task, but the task varies depending on different input(s). And that's where parameters come in.
+Parameters are just a fancy word for input. They are variables that a functions takes in. They go inside the parentheses in the function definition and are used inside the function.
+For example:
+```python
+name = input("Whats your name?: ")
+def happy_birthday(name):
+  print('Happy birthday to you')
+  print('Happy birthday to you')
+  print('Happy birthday dear ' + name )
+  print('Happy birthday to you')
+
+happy_birthday(name)
+```
+above isnt technically correct here because you can add an argument inside the call.
+```py
+def happy_birthday(name):
+  print('Happy birthday to you')
+  print('Happy birthday to you')
+  print('Happy birthday dear ' + name )
+  print('Happy birthday to you')
+
+happy_birthday('Lillian')
+```
+- **Python return values**: every Python function has an output! The return keyword is used to terminate a function and output a value: When not added, Python will return the default value, None, as the return value.
+Use return in a function when you want to send value(s) from one point in the code to another.
+Use print() in a function when you want to display some text to the user.
+good example exercise below called return.
 
 ## Code examples: 
+
 - **function ecploration**
 ```python
 print() 
@@ -59,6 +102,7 @@ range()
 compile() 
 #turns Python code (as text) into something Python can run (bytecode). 
 ```
+
 - **area calculator**
 ```python
 # calculator.py
@@ -87,4 +131,67 @@ else:
   print("Quit")
 
 print(area)
+```
+
+- **creating function**
+
+```python
+# fortune_cookie
+
+def fortune_cookie():
+  import random
+  fortune = random.randint(1, 8)
+
+  if fortune == 1:
+    print("Don't pursue happiness – create it.")
+  elif fortune == 2:
+    print("All things are difficult before they are easy.")
+  elif fortune == 3:
+    print("The early bird gets the worm, but the second mouse gets the cheese.")
+  elif fortune == 4:
+    print("Someone in your life needs a letter from you.")
+  elif fortune == 5:
+    print("Don't just think. Act!")
+  elif fortune == 6:
+    print("Your heart will skip a beat.")
+  elif fortune == 7:
+    print("The fortune you search for is in another cookie.")
+  else:
+    print("Help! I'm being held prisoner in a Chinese bakery!")
+
+fortune_cookie()
+```
+
+- **calling functions challenge**
+
+```py
+def distance_to_miles(distance):
+  miles = distance / 1.609
+  print(miles)
+distance_to_miles(1000)
+```
+
+- **return**
+```py
+# calculator.py
+def add(a, b):
+  return a + b
+
+def subtract(a, b):
+  return a - b
+
+def multiply(a, b):
+  return a * b
+
+def divide(a, b):
+  return a / b
+
+def exp(a, b):
+  return a ** b
+
+print(add(3, 5))
+print(subtract(3, 5))
+print(multiply(3, 5))
+print(divide(3, 5))
+print(exp(3, 5))
 ```
