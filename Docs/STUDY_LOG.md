@@ -25,6 +25,197 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-10-28
+**Focus** python, c# 
+
+**Topics covered**
+- create classes for data types in lists
+- create objects
+-  The __ init __() Method
+- instance methods
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~84 hours total (updated)
+
+- **classes**: For example if i have a list here of student_1 = [1001, 'Asiqur', 10, 3.7, True], how would we know what each item corresponds to, therefore we make classes. heres how a class is made
+```py
+# restaurants.py food delivery
+class Restaurant:
+  name = '' #str
+  category = '' #str
+  rating = 0.0 #decimal
+  delivery = False #bool
+
+```
+
+- **objects**: An object is an "instance" of a class. A class is simply a template for creating objects, which are individual copies of the class with actual values.
+here is an example with the restaurant. vars function is a built in function with definition 'Return the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute.'
+```py
+class Restaurant:
+  name = ''
+  category = ''
+  rating = 0.0
+  delivery = False
+
+bobs_burgers = Restaurant()
+bobs_burgers.name = 'Bob\'s Burgers'
+bobs_burgers.category = 'American Diner'
+bobs_burgers.rating = 4.2
+bobs_burgers.delivery = False
+
+Marse_Nepalese = Restaurant()
+Marse_Nepalese.name = 'Marse, ancient grains'
+Marse_Nepalese.category = 'Takeaway'
+Marse_Nepalese.rating = 5.0
+Marse_Nepalese.delivery = False
+
+Akara = Restaurant()
+Akara.name = 'Akara'
+Akara.category = 'West African Restaurant'
+Akara.rating = 5.0
+Akara.delivery = False
+
+print(vars(bobs_burgers))
+print(vars(Marse_Nepalese))
+print(vars(Akara))
+#prints out: {'name': "Bob's Burgers", 'category': 'American Diner', 'rating': 4.2, 'delivery': False}
+#{'name': 'Marse, ancient grains', 'category': 'Takeaway', 'rating': 5.0, 'delivery': False}
+#{'name': 'Akara', 'category': 'West African Restaurant', 'rating': 5.0, 'delivery': False}
+
+```
+- **The __ init __() Method**: Using the init method lets us construct objects with unique attributes, we can pass in values for each attribute to initialize the new object, all in a single line!
+class City:
+  def __init__(self, name, country, population, landmarks):
+    self.name = name
+    self.country = country
+    self.population = population
+    self.landmarks = landmarks
+- **Instance methods**: Just like how insert(), append() and remove() are built in methods here you will be adding your own methods, within a class. 
+
+## Code examples: 
+- **Objects and Classes**
+```python
+class City:
+  def __init__(self, name, country, population, landmarks):
+    self.name = name
+    self.country = country
+    self.population = population
+    self.landmarks = landmarks
+Beijing = City('Beijing', 'China', 21858000, "forbidden city, Great Wall, Temple of Heaven")
+London = City('London', 'United Kingdom', 8945000, 'St Pauls, Westminster, 02')
+Taipei = City('Taipei', 'Taiwan', 2447000, 'Lungshan Temple, 101 Observatory, Ximending')
+
+
+print(vars(Beijing))
+print(vars(London))
+print(vars(Taipei))
+```
+
+- **instance method example**
+```py
+class Student: 
+  def __init__(self, name, year, enrolled, gpa):
+    self.name = name
+    self.year = year
+    self.enrolled = enrolled
+    self.gpa = gpa
+  
+  def display_info(self):
+    print('The student ' + self.name + '\'s GPA is ' + str(self.gpa) + '!')
+  
+  def graduation(self):
+    if self.enrolled and self.gpa > 2.5 and self.year == 12:
+      print(self.name + ' will be able to graduate this year!')
+
+mitsuha = Student('宮水三葉', 12, True, 4.0)
+taki = Student('立花瀧', 11, True, 3.8)
+
+mitsuha.display_info()
+mitsuha.graduation()
+taki.display_info()
+taki.graduation()
+# Output:
+# The student 宮水三葉's GPA is 4.0!
+#宮水三葉 will be able to graduate this year!
+# The student 立花瀧's GPA is 3.8!
+```
+```py
+# bank_accounts.py
+
+class BankAccount:
+    def __init__(self, first_name, last_name, account_id, account_type, pin, balance):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.account_id = account_id
+        self.account_type = account_type
+        self.pin = pin
+        self.balance = balance
+
+    def deposit(self):
+        deposit_amount = float(input("Amount to deposit: "))
+        self.balance += deposit_amount
+        print(self.balance)
+
+    def withdraw(self):
+        withdraw_amount = float(input("How much do you wish to withdraw?: "))
+        self.balance -= withdraw_amount
+        print(self.balance)
+
+    def display_balance(self):
+        print(self.balance)
+
+person = BankAccount('Estella', 'Hurlock', 1234567, 'bank', 1234, 67.99)
+person.deposit()
+person.withdraw()
+person.display_balance()
+
+```
+
+```py
+#pokedex practice instance methods
+# pokedex.py
+
+class Pokemon:
+  def __init__(self, entry, name, types, description, is_caught):
+    self.entry = entry
+    self.name = name
+    self.types = types
+    self.description = description
+    self.is_caught = is_caught
+  
+  def speak(self):
+    print(self.name, self.name)
+  
+  def display_details(self):
+    print(
+      f"Entry Number: {self.entry}\n" 
+      f"Name: {self.name}\n" 
+      f"Type: {self.types}\n" 
+      f"Description: {self.description}"
+      )
+    if self.is_caught:
+      print(f"{self.name} 'has already been caught!")
+    else:
+      print(f"{self.name} has not been caught yet!")
+
+Pikachu = Pokemon(23, 'Pikachu', 'Electric', 'It has small electric sacs on both its cheeks. If threatened, it looses electric charges from the sacs.', True)
+Arceus = Pokemon(493, 'Arceus', 'Normal', 'Cool Pokemon, mythical white equine', True)
+Umbreon = Pokemon(197, 'Umbreon', 'Dark', "Dark evee evolution, beautiful majestic awesomness", True)
+
+
+Pikachu.speak()
+Pikachu.display_details()
+Arceus.speak()
+Arceus.display_details()
+Umbreon.speak()
+Umbreon.display_details()
+```
+
 
 ## 2025-10-27
 **Focus** python, c#, c++
