@@ -25,7 +25,7 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
-## 2025-11-13
+## 2025-11-10
 **Focus** Recaps after holiday
 
 **Topics covered**
