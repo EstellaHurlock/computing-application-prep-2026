@@ -25,6 +25,99 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-10-13
+**Focus** Recaps after holiday
+
+**Topics covered**
+- Python
+- C#
+- C++
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~87 hours total (updated)
+
+- **Python recaps**: reminder
+```py
+import random
+number = random.randint(0, 6)
+or
+5 ** 3 
+print("5^3")
+or
+!= 
+print("not equal to")
+or
+for i in range(10, 0, -1):
+  print(i)
+print("count down from 10 to 1 increments of -1, e.g 10, 9, 8, 7 etc to 1)
+```
+while loops, e.g
+```py
+while total != 2:
+  print("Nope")
+or
+for i in range(1, 25):
+  print("* " * i)
+print("dont forget hashtag for notes")
+#this for i in range part means to print out an asterisk for every line of I, with a space. 
+#e.g 
+#*
+#* *
+#* * *
+#* * * * etc.
+for i in range(1, number + 1):
+    total += i**2
+#does for example 5 input, 1squared add 2 squared up to 5 squared.
+class City:
+  def __init__(self, name, country, population, landmarks):
+    self.name = name
+```
+
+- **C# recaps**: sololearn
+- **C++**: sololearn
+
+
+## 2025-10-30
+**Focus** c# 
+
+**Topics covered**
+- visual studio code c# setup
+- c++
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~86 hours total (updated)
+
+- **Extensions, .NET**: dotnet build, dotnet run. lots of debugging but should be setup now.
+- **compile, execute**: The whole process should look like this:
+Write some code.
+Save the program.
+Compile & execute.
+Repeat.
+The source code files have the extension .cpp like calculator.cpp.
+The machine code files have the extension .out like calculator.out.
+To compile a file, we need to type g++ followed by the file name and press enter:
+example
+```cpp
+g++ hello.cpp
+```
+To execute a machine code file, we need to type ./ and the machine code file name and press enter.
+```cpp
+./a.out
+```
+
+note going on holiday ater today, only focusing on audio projects
+
+
 ## 2025-10-28
 **Focus** python, c# 
 
