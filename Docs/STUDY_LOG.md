@@ -25,6 +25,118 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+## 2025-11-16
+**Focus** python challenge packs
+
+**Topics covered**
+- functions python 
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~89 hours total (updated)
+
+- **Returning values in the print text**: example below called kda.
+- **moon phase example**: Here there were a few things I reminded and reinforced for myself. Paticularly with the use of return for saving each if and elif option, i was origionally using print, mainly due to habit. But it makes complete sense to use return. Additionally, within the if and elif statements, using phase instead of moon_phase, the latter is the defined fucnction name so would not make sense to use, however, the former is the actual parameter that we're using so need to add that instead. other than these small errors, it was a straightforward question.
+- **making my def functions more efficient**: It's not hard to streamline the defined functions, you can put it all into one return line. this felt more necessary in the last question as I was working with string and int variables and can only return once. therefore putting it all in one line was very nice.
+
+
+## Code examples: 
+- **kda**
+```python
+def KDA(kill, death, assist):
+  return(kill + assist)/death
+
+print(f"Your average is {KDA(6, 5, 4)}")
+```
+- **moon phase with lots of return and if statements**
+```py
+def moon_phase(phase):
+  
+  if phase == 'New Moon':
+    return "🌑"
+  elif phase == 'Waxing Crescent':
+    return "🌒"
+  elif phase == 'First Quarter':
+    return "🌓"
+  elif phase == 'Waxing Gibbous':
+    return "🌔"
+  elif phase == 'Full Moon':
+    return "🌕"
+  elif phase == 'Waning Gibbous':
+    return "🌖"
+  elif phase == 'Last Quarter':
+    return "🌗"
+  elif phase == 'Waning Crescent':
+    return "🌘"
+  else:
+    return "Invalid moon phase"
+  
+
+answer = moon_phase('New Moon')
+print(answer)  
+
+```
+- **dog years, streamlined**
+```py
+def dog_years(name, age):
+  return f"{name} is {age * 7} years old in human years."
+
+print(dog_years('Landon', 3))
+print(dog_years('Red Bean', 6))
+print(dog_years('Cooper', 2))
+```
+
+## 2025-11-11
+**Focus** python
+
+**Topics covered**
+- python challenge packs functions
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~88 hours total (updated)
+
+- **return vs print**: when defining and creaating functions, no need to return unless i need the updates data to continue on, or if i'm just trying to write to the reader, do print. over complecated an example in code examples below
+
+
+## Code examples: 
+- **Simple functions challenge, Correct answer first then overcomplicated after**
+```python
+def greetings(first_name, last_name):
+    print(f"{last_name}, {first_name} {last_name}")
+
+greetings("James", "Bond")
+```
+With just Print, below i used return.
+```py
+first_name = input("first name? ")
+last_name = input("last name? ")
+
+def greetings(f, l):
+  return f"{l}, {f} {l}"
+
+print(greetings(first_name, last_name))
+
+```
+
+- **Return with average of parameters**
+```py
+def average(num1, num2):
+  return (num1 + num2) / 2
+
+result_av = average(3, 7)
+print(f"The average is {result_av}")
+
+```
+
 ## 2025-11-10
 **Focus** Recaps after holiday
 
