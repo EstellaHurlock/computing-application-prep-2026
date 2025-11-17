@@ -25,6 +25,73 @@ EOF
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
+
+## 2025-11-17
+**Focus** C#
+
+**Topics covered**
+- Call methods from the .NET Class Library using C# 
+- stateful vs stateless
+- creating instances
+
+**Learning Objective**
+To know how to find classes and methods in the .NET Class Library, and how to use them to perform common programming tasks.
+**Reflection**
+So far into this odule, lot's of theory to tackle here, but these are the exact sort of basics I want to get right into by bones, specifically instance methods, I have heard them mentioned in alternative research in computer science, talks and videos, so I really want to get to grips with them. feel pretty confident about using dotnet run. straightforwards. 
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~90 hours total (updated)
+
+- **Class libraries**: the .NET Class Library includes the Console class for developers working on console applications. The Console class includes methods for input and output operations such as Write(), WriteLine(), Read(), ReadLine(), and many others. Additionally C# data types (such as string and int) are actually made available through classes in the .NET Class Library. 
+- **Running VSC c# code**:Working VSC code, 
+After opening my files and projects, and inputting some code: Save then Right-Click on the project in the explorer menu, then select open integrated terminal. To then run the code, type dotnet run.
+- **Stateful vs stateless**
+stateless methods are implemented so that they can work without referencing or changing any values already stored in memory. Stateless methods are also known as static methods.
+For example, the Console.WriteLine() method doesn't rely on any values stored in memory. It performs its function and finishes without impacting the state of the application in any way.
+stateful methods are built in such a way that they rely on values stored in memory by previous lines of code that have already been executed. Or they modify the state of the application by updating values or storing new values in memory. They're also known as instance methods.
+Stateful (instance) methods keep track of their state in fields, which are variables defined on the class. Each new instance of the class gets its own copy of those fields in which to store state.
+A single class can support both stateful and stateless methods. However, when you need to call stateful methods, you must first create an instance of the class so that the method can access state.
+- **Creating an instance of a class**
+To create a new instance of a class, you use the new operator. Consider the following line of code that creates a new instance of the Random class to create a new object called dice:
+```c#
+Random dice = new Random();
+```
+Comment: The latest version of the .NET Runtime enables you to instantiate an object without having to repeat the type name (target-typed constructor invocation). For example, the following code will create a new instance of the Random class:
+```c#
+Random dice = new();
+```
+- **Return values and parameters of methods**
+Some methods are designed to complete their function and end "quietly". In other words, they don't return a value when they finish. They are referred to as void methods. Other methods are designed to return a value upon completion. The return value is typically the result of an operation. A return value is the primary way for a method to communicate back to the code that calls the method.
+When calling a method that returns a value, you'll often assign the return value to a variable. That way, you can use the value later in your code. In the dice scenario, you assigned the return value of Random.Next() to the roll variable:
+```c#
+int roll = dice.Next(1, 7);
+```
+Even though a method returns a value, it's possible to call the method without using the return value. For example, you could ignore the return value by calling the method as follows:
+```c#
+dice.Next(1, 7);
+```
+However, ignoring the return value would be pointless. The reason you're calling the Next() method is so that you can retrieve the next random value.
+
+- **Method parameters and arguments in the calling statement**
+Methods use a method signature to define the number of parameters that the method will accept, as well as the data type of each parameter. The coding statement that calls the method must adhere the requirements specified by the method signature. Some methods provide options for the number and type of parameters that the method accepts. TBC tomo.
+
+
+
+## Code examples: 
+- **Random dice throw**
+```c#
+Random dice = new Random();
+int roll = dice.Next(1, 7);
+Console.WriteLine(roll);
+
+//On the third code line, I include a reference to the Console class and call the Console.WriteLine() method directly. However, I use a different technique for calling the Random.Next() method. The reason why I'm using two different techniques is because some methods are "stateful" and others are "stateless".
+```
+
 ## 2025-11-16
 **Focus** python challenge packs
 
