@@ -26,6 +26,62 @@ cat > STUDY_LOG.md <<'EOF'
 # Study Log
 
 
+## 2025-11-18
+**Focus** c#
+
+**Topics covered**
+- Overloaded methods
+- IntelliSense
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~91 hours total (updated)
+
+- **Use is VSC**: make sure to save in between dotnet run because otherwise it wont run the new code properly.
+- **Overloaded methods**: An overloaded method signature, among other things, enables you to call the method with or without arguments specified in the calling statement. Essentially an overloaded method is defined with multiple method signatures. Overloaded methods provide different ways to call the methods or provide different types of data. 
+An example is Console.WriteLine() which has 19 different overloaded versions. Most of these allow the method to accept different types and then write the specifies information to the console. Consider the following:
+ ```c#
+  int number = 7;
+  string text = "seven";
+  
+  Console.WriteLine(number);
+  Console.WriteLine();
+  Console.WriteLine(text);
+  
+```
+ In this example, you're invoking three separate overloaded versions of the WriteLine()method. The first WriteLine() method uses a method signature that defines an int parameter, the second uses a method dignature that defines zero parameters and the third a string parameter. Another example, the Random.Next() method has overloaded versions that enable you to set various levels of constraint on the randomly generated number.
+
+- **IntelliSense**: As I type I'll be given clues about where to go. Identifiers. For dice.Next() In this case, IntelliSense provides all of the information that you need to select the appropriate overload, including a detailed explanation of maxValue and minValue. However, you might encounter situations where you need to consult the method's documentation. When you type ( in that line, opetions for 1/3 2/3 and 3/3 come up.
+
+
+## Code examples: 
+- **Random dice ranges**
+```c#
+Random dice = new Random();
+int roll1 = dice.Next();
+int roll2 = dice.Next(101);
+int roll3 = dice.Next(50, 101);
+
+Console.WriteLine($"First roll: {roll1}");
+Console.WriteLine($"Second roll: {roll2}");
+Console.WriteLine($"Third roll: {roll3}");
+//Here the first roll doesn’t set a boundary, the second sets an upper boundary and the third an upper and lower.
+```
+- **larger value**
+```c#
+
+int firstValue = 500;
+int secondValue = 600;
+int largerValue = Math.Max(firstValue, secondValue);
+Console.WriteLine(largerValue);
+// found throuh intellisense
+```
+
+
 ## 2025-11-17
 **Focus** C#
 
