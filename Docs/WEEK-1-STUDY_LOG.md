@@ -1,4 +1,4 @@
-cd "/Users/estella/git-practice/imperial-app-prep/computing-application-prep-2026-imperial"
+cd "/Users/estella/git-practice/app-prep/computing-application-prep-2026"
 
 mkdir -p docs algorithms maths/evidence
 
