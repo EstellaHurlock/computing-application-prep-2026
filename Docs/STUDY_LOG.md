@@ -1,11 +1,11 @@
-# computing-application-prep-2026-imperial
+# computing-application-prep-2026
 cd "/Users/estella/git-practice/imperial-app-prep/computing-application-prep-2026-imperial"
 
 mkdir -p algorithms maths/evidence
 
 # README.md 
 cat > README.md <<'EOF'
-# Imperial MSc Computing (Conversion) – Prep Portfolio
+# MSc – Prep Portfolio
 
 This repository tracks my short sprint prep for Imperial: maths fundamentals and core algorithms, plus small Python snippets.
 You can find the first month of study log entries at MONTH_1_STUDY_LOG
@@ -16,14 +16,46 @@ You can find the first month of study log entries at MONTH_1_STUDY_LOG
 - `maths/` – concise notes and scanned handwritten evidence.
 - `STUDY_LOG.md` – dated entries of what I covered and produced.
 
-# computing-application-prep-2026-imperial
-cd "/Users/estella/git-practice/imperial-app-prep/computing-application-prep-2026-imperial" 
+# computing-application-prep-2026
+cd "/Users/estella/git-practice/app-prep/computing-application-prep-2026" 
 
 EOF
 
 # Study log
 cat > STUDY_LOG.md <<'EOF'
 # Study Log
+
+## 2025-11-19
+**Focus** python
+
+**Topics covered**
+- modules
+- 2
+- 3
+
+**Learning Objective**
+
+**Reflection**
+
+**Work produced**
+- Code snippets below
+- Notes added in `maths/notes.md`
+- Handwritten evidence planned in `maths/evidence/2025-09-26/` (photos/scans)
+
+
+**Time:** ~x hours total (updated)
+
+- **What is a module**: A module is any file with a .py extension. But more ideally, a module contains statements, functions, and class definitions that revolve around a similar purpose.
+By default, Python comes with over 200 modules that we can use. Examples include, random, math, datetime
+- **2**: text here
+
+
+## Code examples: 
+- **Title**
+```python
+s = "Python syntax highlighting"
+print s
+```
 
 
 ## 2025-11-18
