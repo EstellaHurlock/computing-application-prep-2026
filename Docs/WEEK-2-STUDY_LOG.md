@@ -1,22 +1,19 @@
-# computing-application-prep-2026-imperial
-cd "/Users/estella/git-practice/imperial-app-prep/computing-application-prep-2026-imperial"
+# computing-application-prep-2026
+cd "/Users/estella/git-practice/app-prep/computing-application-prep-2026"
 
 mkdir -p algorithms maths/evidence
 
 # README.md 
 cat > README.md <<'EOF'
-# Imperial MSc Computing (Conversion) – Prep Portfolio
+# MSc Computing (Conversion) – Prep Portfolio
 
-This repository tracks my short sprint prep for Imperial: maths fundamentals and core algorithms, plus small Python snippets.
+This repository tracks my short sprint prep for a masters: maths fundamentals and core algorithms, plus small Python snippets.
 
 ## Structure
 - `Computer Science/` – CS50: Introduction to Computer Science (changed from last weeks algorithms as I need to build my fundamentals foundations)
 - `algorithms/` – small Python implementations (e.g., Gram–Schmidt).
 - `maths/` – concise notes and scanned handwritten evidence.
 - `STUDY_LOG.md` – dated entries of what I covered and produced.
-
-# computing-application-prep-2026-imperial
-cd "/Users/estella/git-practice/imperial-app-prep/computing-application-prep-2026-imperial"
 
 EOF
 
