@@ -1,5 +1,5 @@
 # computing-application-prep-2026
-cd "/Users/estella/git-practice/imperial-app-prep/computing-application-prep-2026-imperial"
+cd "/Users/estella/git-practice/app-prep/computing-application-prep-2026"
 
 mkdir -p algorithms maths/evidence
 
@@ -7,7 +7,7 @@ mkdir -p algorithms maths/evidence
 cat > README.md <<'EOF'
 # MSc – Prep Portfolio
 
-This repository tracks my short sprint prep for Imperial: maths fundamentals and core algorithms, plus small Python snippets.
+This repository tracks my short sprint prep for university: maths fundamentals and core algorithms, plus small Python snippets.
 You can find the first month of study log entries at MONTH_1_STUDY_LOG
 
 ## Structure
@@ -15,9 +15,6 @@ You can find the first month of study log entries at MONTH_1_STUDY_LOG
 - `algorithms/` – small Python implementations (e.g., Gram–Schmidt).
 - `maths/` – concise notes and scanned handwritten evidence.
 - `STUDY_LOG.md` – dated entries of what I covered and produced.
-
-# computing-application-prep-2026
-cd "/Users/estella/git-practice/app-prep/computing-application-prep-2026" 
 
 EOF
 
